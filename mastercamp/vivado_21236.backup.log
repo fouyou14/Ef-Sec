@@ -1,0 +1,1343 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jun 23 15:01:14 2021
+# Process ID: 21236
+# Current directory: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1136 C:\Users\tomga\AppData\Roaming\Xilinx\Vivado\mastercamp\mastercamp.xpr
+# Log file: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/vivado.log
+# Journal file: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 723.062 ; gain = 99.973
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Wed Jun 23 15:17:33 2021] Launched synth_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2/runme.log
+[Wed Jun 23 15:17:33 2021] Launched impl_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Wed Jun 23 15:18:44 2021] Launched synth_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2/runme.log
+[Wed Jun 23 15:18:44 2021] Launched impl_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 808.938 ; gain = 7.801
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A79440B
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1917.508 ; gain = 1108.570
+set_property PROGRAM.FILE {C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/design.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/design.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1926.121 ; gain = 0.016
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/modfour.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyMod4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Mux4to1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Mux4to1'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1964.902 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture mymod7arch of entity xil_defaultlib.MyMod7 [mymod7_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1964.902 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:02:26 ; elapsed = 00:02:31 . Memory (MB): peak = 2014.773 ; gain = 36.371
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:02:33 ; elapsed = 00:02:36 . Memory (MB): peak = 2014.773 ; gain = 37.949
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:02:36 ; elapsed = 00:02:53 . Memory (MB): peak = 2014.773 ; gain = 49.871
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Wed Jun 23 15:35:34 2021] Launched synth_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2/runme.log
+[Wed Jun 23 15:35:34 2021] Launched impl_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/runme.log
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Wed Jun 23 15:36:33 2021] Launched synth_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2/runme.log
+[Wed Jun 23 15:36:33 2021] Launched impl_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/runme.log
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Wed Jun 23 15:37:30 2021] Launched synth_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2/runme.log
+[Wed Jun 23 15:37:30 2021] Launched impl_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/runme.log
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Wed Jun 23 15:38:43 2021] Launched synth_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2/runme.log
+[Wed Jun 23 15:38:43 2021] Launched impl_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/design.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2018.996 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+export_ip_user_files -of_objects  [get_files C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd
+add_files -norecurse C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Wed Jun 23 15:59:08 2021] Launched synth_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2/runme.log
+[Wed Jun 23 15:59:09 2021] Launched impl_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276A79440B
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Wed Jun 23 16:02:43 2021] Launched synth_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2/runme.log
+[Wed Jun 23 16:02:43 2021] Launched impl_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/runme.log
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Wed Jun 23 16:03:57 2021] Launched synth_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2/runme.log
+[Wed Jun 23 16:03:57 2021] Launched impl_2...
+Run output will be captured here: C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A79440B
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/impl_2/design.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2240.805 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property -name {xsim.simulate.runtime} -value {1050ms} -objects [get_filesets sim_3]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/myMod7.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/FSMCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/ClockManagement.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/myMod7.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/FSMCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/ClockManagement.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/myMod7.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/FSMCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/ClockManagement.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/myMod7.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/FSMCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/ClockManagement.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/myMod7.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/FSMCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/ClockManagement.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/myMod7.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/FSMCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/ClockManagement.vhd:]
+export_ip_user_files -of_objects  [get_files C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd
+add_files -norecurse C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.runs/synth_2
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Check'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/myMod7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyMod7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LEDManagement'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbenchCalendar'
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2240.805 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture mymod7arch of entity xil_defaultlib.MyMod7 [mymod7_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2240.805 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1050ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:02:40 ; elapsed = 00:03:18 . Memory (MB): peak = 2250.367 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:02:47 ; elapsed = 00:03:25 . Memory (MB): peak = 2250.367 ; gain = 9.562
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:02:51 ; elapsed = 00:03:38 . Memory (MB): peak = 2250.367 ; gain = 9.562
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbenchCalendar'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture mymod7arch of entity xil_defaultlib.MyMod7 [mymod7_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1050ms
+run: Time (s): cpu = 00:02:32 ; elapsed = 00:03:15 . Memory (MB): peak = 2446.215 ; gain = 0.000
+xsim: Time (s): cpu = 00:02:33 ; elapsed = 00:03:17 . Memory (MB): peak = 2446.215 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbenchCalendar_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1050ms
+launch_simulation: Time (s): cpu = 00:02:34 ; elapsed = 00:03:20 . Memory (MB): peak = 2446.215 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Check'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbenchCalendar'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture mymod7arch of entity xil_defaultlib.MyMod7 [mymod7_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1050ms
+run: Time (s): cpu = 00:02:27 ; elapsed = 00:03:13 . Memory (MB): peak = 2446.215 ; gain = 0.000
+xsim: Time (s): cpu = 00:02:30 ; elapsed = 00:03:16 . Memory (MB): peak = 2446.215 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbenchCalendar_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1050ms
+launch_simulation: Time (s): cpu = 00:02:30 ; elapsed = 00:03:20 . Memory (MB): peak = 2446.215 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Check'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture mymod7arch of entity xil_defaultlib.MyMod7 [mymod7_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1050ms
+run: Time (s): cpu = 00:02:34 ; elapsed = 00:03:10 . Memory (MB): peak = 2446.215 ; gain = 0.000
+xsim: Time (s): cpu = 00:02:35 ; elapsed = 00:03:12 . Memory (MB): peak = 2446.215 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbenchCalendar_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1050ms
+launch_simulation: Time (s): cpu = 00:02:35 ; elapsed = 00:03:16 . Memory (MB): peak = 2446.215 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Check'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture mymod7arch of entity xil_defaultlib.MyMod7 [mymod7_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1050ms
+run: Time (s): cpu = 00:02:22 ; elapsed = 00:03:11 . Memory (MB): peak = 2446.215 ; gain = 0.000
+xsim: Time (s): cpu = 00:02:23 ; elapsed = 00:03:13 . Memory (MB): peak = 2446.215 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbenchCalendar_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1050ms
+launch_simulation: Time (s): cpu = 00:02:24 ; elapsed = 00:03:17 . Memory (MB): peak = 2446.215 ; gain = 0.000
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276A79440B
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Check'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 10 elements ; expected 11 [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd:55]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit testbenchcalendar in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_hw
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 10 elements ; expected 11 [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd:55]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit testbenchcalendar in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Check'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture mymod7arch of entity xil_defaultlib.MyMod7 [mymod7_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1050ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:02:30 ; elapsed = 00:03:01 . Memory (MB): peak = 2491.988 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:02:32 ; elapsed = 00:03:04 . Memory (MB): peak = 2491.988 ; gain = 9.074
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:02:33 ; elapsed = 00:03:07 . Memory (MB): peak = 2491.988 ; gain = 9.074
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+export_ip_user_files -of_objects  [get_files C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd
+add_files -norecurse C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/myMod7.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/myMod7.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd
+add_files -norecurse C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd
+add_files -norecurse C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbenchCalendar'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <totalDayNumber> does not exist in entity <LEDManagement>.  Please compare the definition of block <LEDManagement> to its component declaration and its instantion to detect the mismatch. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd:155]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit testbenchcalendar in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2491.988 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+add_files -norecurse C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Check'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LEDManagement'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1050ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:01:05 ; elapsed = 00:01:21 . Memory (MB): peak = 2491.988 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:01:11 ; elapsed = 00:01:26 . Memory (MB): peak = 2491.988 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:01:12 ; elapsed = 00:01:34 . Memory (MB): peak = 2491.988 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LEDManagement'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1050ms
+run: Time (s): cpu = 00:03:15 ; elapsed = 00:04:23 . Memory (MB): peak = 2491.988 ; gain = 0.000
+xsim: Time (s): cpu = 00:03:23 ; elapsed = 00:04:32 . Memory (MB): peak = 2491.988 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbenchCalendar_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1050ms
+launch_simulation: Time (s): cpu = 00:03:25 ; elapsed = 00:04:42 . Memory (MB): peak = 2491.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbenchCalendar'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2723.297 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbenchCalendar'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1050ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 2723.297 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 2723.297 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 2723.297 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+set_property -name {xsim.simulate.runtime} -value {1300ms} -objects [get_filesets sim_3]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/design.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sim_3/new/testbenchCalendar.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/ClockManagement.vhd:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/LEDManagement.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LEDManagement'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1300ms
+run: Time (s): cpu = 00:05:23 ; elapsed = 00:06:26 . Memory (MB): peak = 2723.297 ; gain = 0.000
+xsim: Time (s): cpu = 00:05:28 ; elapsed = 00:06:31 . Memory (MB): peak = 2723.297 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbenchCalendar_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1300ms
+launch_simulation: Time (s): cpu = 00:05:29 ; elapsed = 00:06:39 . Memory (MB): peak = 2723.297 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Check'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1300ms
+run: Time (s): cpu = 00:05:07 ; elapsed = 00:06:17 . Memory (MB): peak = 2840.496 ; gain = 117.199
+xsim: Time (s): cpu = 00:05:13 ; elapsed = 00:06:24 . Memory (MB): peak = 2840.496 ; gain = 117.199
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbenchCalendar_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1300ms
+launch_simulation: Time (s): cpu = 00:05:14 ; elapsed = 00:06:32 . Memory (MB): peak = 2840.496 ; gain = 117.199
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Check'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1300ms
+run: Time (s): cpu = 00:04:17 ; elapsed = 00:05:59 . Memory (MB): peak = 2840.496 ; gain = 0.000
+xsim: Time (s): cpu = 00:04:24 ; elapsed = 00:06:06 . Memory (MB): peak = 2840.496 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbenchCalendar_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1300ms
+launch_simulation: Time (s): cpu = 00:04:25 ; elapsed = 00:06:14 . Memory (MB): peak = 2840.496 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_3 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchCalendar' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj testbenchCalendar_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.srcs/sources_1/new/Check.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Check'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+"xelab -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6394e5683f4e414eabe64bb6b9e5e42c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbenchCalendar_behav xil_defaultlib.testbenchCalendar -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ClockManagement [clockmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture mymod4arch of entity xil_defaultlib.MyMod4 [mymod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMCalendar [fsmcalendar_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counters [counters_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transcoder [transcoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Check [check_default]
+Compiling architecture behavioral of entity xil_defaultlib.LEDManagement [ledmanagement_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbenchcalendar
+Built simulation snapshot testbenchCalendar_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2840.496 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tomga/AppData/Roaming/Xilinx/Vivado/mastercamp/mastercamp.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchCalendar_behav -key {Behavioral:sim_3:Functional:testbenchCalendar} -tclbatch {testbenchCalendar.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source testbenchCalendar.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1300ms
+run: Time (s): cpu = 00:14:14 ; elapsed = 00:15:26 . Memory (MB): peak = 2840.496 ; gain = 0.000
+xsim: Time (s): cpu = 00:14:21 ; elapsed = 00:15:32 . Memory (MB): peak = 2840.496 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbenchCalendar_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1300ms
+launch_simulation: Time (s): cpu = 00:14:22 ; elapsed = 00:15:43 . Memory (MB): peak = 2840.496 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 23 23:09:09 2021...
